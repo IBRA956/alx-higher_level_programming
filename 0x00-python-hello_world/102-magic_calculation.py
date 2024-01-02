@@ -1,2 +1,5 @@
 def magic_calculation(a, b):
-        return 98 + a ** b
+        """Performs a calculation involving powers and addition."""
+            result = 98 + a ** b  # Matches the bytecode operations
+                return result
+
