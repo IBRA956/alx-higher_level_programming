@@ -15,6 +15,7 @@ void print_python_float(PyObject *p)
 	if (!PyFloat_CheckExact(p))
 	{
 		printf("  [ERROR] Invalid Float Object\n");
+		return;
 	}
 	value = ((PyFloatObject *)p)->ob_fval;
 	string = PyOS_double_to_string(value, 'r', 0, Py_DTSF_ADD_DOT_0, NULL);
